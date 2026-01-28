@@ -1,0 +1,5 @@
+package com.zeptopay.request;
+
+public class OrderDetails {
+
+}

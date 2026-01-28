@@ -1,0 +1,18 @@
+package com.zeptopay.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.zeptopay.request.OrderDetails;
+@RestController
+@RequestMapping("/zepto")
+public class PaymentController {
+	@PostMapping("/processpayment")
+	public String payment(@RequestBody OrderDetails order) {
+		
+		return "Order Successfully placed";
+	}
+
+}
